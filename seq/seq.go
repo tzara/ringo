@@ -1,4 +1,6 @@
-package seq
+package main
+
+import "fmt"
 
 func Fib(n int) int {
 	p, q := 0, 1
@@ -6,4 +8,8 @@ func Fib(n int) int {
 		p, q = q, p+q
 	}
 	return p
+}
+
+func main() {
+	fmt.Println(Fib(6))
 }
